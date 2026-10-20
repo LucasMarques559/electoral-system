@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Voz do povo</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <span>V</span> Voz do povo
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#candidatos">Candidatos</a></li>
+                <li><a href="#candidatar">Candidate-se</a></li>
+            </ul>
+
+            <a href="#candidatar" class="nav-button">
+                Quero me candidatar
+            </a>
+        </nav>
+    </header>
+
+
+    <!-- HERO -->
+    <main>
+
+        <section id="inicio" class="hero">
+
+            <div class="hero-content">
+
+                <span class="tag">PARTICIPAÇÃO CIDADÃ</span>
+
+                <h1>
+                    Sua voz pode
+                    <span>transformar</span>
+                    o futuro.
+                </h1>
+
+                <p>
+                    Conheça candidatos, veja suas propostas e participe
+                    do processo eleitoral. Você também pode apresentar
+                    sua própria candidatura.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#candidatos" class="primary-button">
+                        Ver candidatos
+                    </a>
+
+                    <a href="#candidatar" class="secondary-button">
+                        Quero me candidatar
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hero-card">
+
+                <div class="card-header">
+                    <span>ELEIÇÃO ATUAL</span>
+                    <span class="status">● Aberta</span>
+                </div>
+
+                <h3>Iniciar votação</h3>
+
+                <div class="progress">
+                    <div></div>
+                </div>
+
+                <p>A oportunidade de mudar o futuro é agora!</p>
+
+                <a href="#total-votes" class="card-button">
+                    Iniciar
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- COMO FUNCIONA -->
+        <section class="how-section">
+
+            <div class="section-title">
+                <span>COMO FUNCIONA</span>
+                <h2>Participar é simples.</h2>
+            </div>
+
+            <div class="steps">
+
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <h3>Conheça</h3>
+                    <p>
+                        Consulte os candidatos e conheça suas propostas.
+                    </p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <h3>Escolha</h3>
+                    <p>
+                        Analise as informações disponíveis e escolha seu candidato.
+                    </p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <h3>Vote</h3>
+                    <p>
+                        Registre seu voto de forma simples e segura.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CANDIDATOS -->
+        <section id="candidatos" class="candidates-section">
+
+            <div class="section-title">
+                <span>CANDIDATOS</span>
+                <h2>Conheça os candidatos</h2>
+                <p>
+                    Consulte as informações e propostas de cada candidato.
+                </p>
+            </div>
+
+            <div class="candidate-grid">
+
+                <!-- CANDIDATO 1 -->
+                <article class="candidate-card">
+
+                    <div class="candidate-avatar">
+                        JS
+                    </div>
+
+                    <span class="party">PARTIDO DEMONSTRATIVO</span>
+
+                    <h3>João Silva</h3>
+
+                    <p class="office">
+                        Candidato a representante
+                    </p>
+
+                    <p>
+                        "Construindo uma comunidade mais participativa
+                        e transparente."
+                    </p>
+
+                    <div class="candidate-actions">
+                        <button class="details-button">
+                            Ver propostas
+                        </button>
+
+                        <button class="vote-button">
+                            Votar
+                        </button>
+                    </div>
+
+                </article>
+
+                <!-- CANDIDATO 2 -->
+                <article class="candidate-card">
+
+                    <div class="candidate-avatar">
+                        MA
+                    </div>
+
+                    <span class="party">PARTIDO DEMONSTRATIVO</span>
+
+                    <h3>Maria Alves</h3>
+
+                    <p class="office">
+                        Candidata a representante
+                    </p>
+
+                    <p>
+                        "Participação, diálogo e responsabilidade
+                        na gestão pública."
+                    </p>
+
+                    <div class="candidate-actions">
+                        <button class="details-button">
+                            Ver propostas
+                        </button>
+
+                        <button class="vote-button">
+                            Votar
+                        </button>
+                    </div>
+
+                </article>
+
+                <!-- CANDIDATO 3 -->
+                <article class="candidate-card">
+
+                    <div class="candidate-avatar">
+                        PC
+                    </div>
+
+                    <span class="party">PARTIDO DEMONSTRATIVO</span>
+
+                    <h3>Pedro Costa</h3>
+
+                    <p class="office">
+                        Candidato a representante
+                    </p>
+
+                    <p>
+                        "Mais transparência e participação
+                        nas decisões da comunidade."
+                    </p>
+
+                    <div class="candidate-actions">
+                        <button class="details-button">
+                            Ver propostas
+                        </button>
+
+                        <button class="vote-button">
+                            Votar
+                        </button>
+                    </div>
+
+                </article>
+
+            </div>
+
+            <!-- APURAÇÃO -->
+            <section id="total-votes" class="results-section">
+
+                <div class="section-title">
+                    <span>APURAÇÃO</span>
+                    <h2>Resultado da votação</h2>
+                    <p>
+                        Acompanhe a quantidade de votos registrados para cada candidato.
+                    </p>
+                </div>
+
+                <div class="results-container">
+
+                    <!-- Candidato 1 -->
+                    <div class="result-item">
+
+                        <div class="result-info">
+                            <div>
+                                <strong>João Silva</strong>
+                                <span>JS</span>
+                            </div>
+
+                            <p class="votos-info">0 votos</p>
+                        </div>
+
+                        <div class="result-bar">
+                            <div class="result-progress" style="width: 0%;"></div>
+                        </div>
+
+                        <small class="percentage-votes">0%</small>
+
+                    </div>
+
+                    <!-- Candidato 2 -->
+                    <div class="result-item">
+
+                        <div class="result-info">
+                            <div>
+                                <strong>Maria Alves</strong>
+                                <span>MA</span>
+                            </div>
+
+                            <p class="votos-info">0 votos</p>
+                        </div>
+
+                        <div class="result-bar">
+                            <div class="result-progress" style="width: 0%;"></div>
+                        </div>
+
+                        <small class="percentage-votes">0%</small>
+
+                    </div>
+
+                    <!-- Candidato 3 -->
+                    <div class="result-item">
+
+                        <div class="result-info">
+                            <div>
+                                <strong>Pedro Costa</strong>
+                                <span>PC</span>
+                            </div>
+
+                            <p class="votos-info">0 votos</p>
+                        </div>
+
+                        <div class="result-bar">
+                            <div class="result-progress" style="width: 0%;"></div>
+                        </div>
+
+                        <small class="percentage-votes">0%</small>
+
+                    </div>
+
+                    <!-- TOTAL -->
+                    <div class="total-votes">
+
+                        <div>
+                            <span>Total de votos</span>
+                            <strong class="total-of-votes">0</strong>
+                        </div>
+
+                        <div>
+                            <span>Status</span>
+                            <strong class="voting-status">
+                                Aguardando início
+                            </strong>
+                        </div>
+
+                    </div>
+            </section>
+
+
+            <!-- CANDIDATURA -->
+            <section id="candidatar" class="application-section">
+
+                <div class="application-info">
+
+                    <span>SEJA UM CANDIDATO</span>
+
+                    <h2>
+                        Quer representar
+                        sua comunidade?
+                    </h2>
+
+                    <p>
+                        Cadastre sua candidatura e apresente suas ideias
+                        para os demais cidadãos.
+                    </p>
+
+                    <ul>
+                        <li>✓ Crie seu perfil de candidato</li>
+                        <li>✓ Apresente suas propostas</li>
+                        <li>✓ Informe sua trajetória</li>
+                        <li>✓ Participe do processo eleitoral</li>
+                    </ul>
+
+                </div>
+
+
+                <form class="candidate-form">
+
+                    <h3>Cadastro de candidatura</h3>
+
+                    <label for="name">Nome completo</label>
+                    <input type="text" id="name" placeholder="Digite seu nome">
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="seu@email.com">
+
+                    <label for="office">Cargo pretendido</label>
+
+                    <select id="office">
+                        <option value="">Selecione um cargo</option>
+                        <option>Representante</option>
+                        <option>Vereador</option>
+                        <option>Prefeito</option>
+                        <option>Outro</option>
+                    </select>
+
+                    <label for="proposals">Suas principais propostas</label>
+
+                    <textarea id="proposals" rows="5" placeholder="Apresente suas propostas..."></textarea>
+
+                    <button type="submit" class="submit-button">
+                        Enviar candidatura
+                    </button>
+
+                </form>
+
+            </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <a href="#" class="logo">
+                    <span>V</span> Voz do povo
+                </a>
+
+                <p>
+                    Uma plataforma demonstrativa de participação cidadã.
+                </p>
+            </div>
+
+            <div>
+                <h4>Plataforma</h4>
+                <a href="#candidatos">Candidatos</a>
+                <a href="#candidatar">Candidate-se</a>
+            </div>
+
+            <div>
+                <h4>Informações</h4>
+                <a href="#">Termos de uso</a>
+                <a href="#">Privacidade</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 Voz do povo — Projeto demonstrativo.
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

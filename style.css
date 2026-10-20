@@ -1,0 +1,890 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #f8fafc;
+    color: #172033;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 25px;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.logo span {
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #2563eb;
+    color: white;
+
+    border-radius: 9px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+.nav-button {
+    background: #2563eb;
+    color: white;
+
+    padding: 11px 18px;
+    border-radius: 8px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    transition: 0.2s;
+}
+
+.nav-button:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    max-width: 1200px;
+    min-height: 600px;
+
+    margin: auto;
+    padding: 90px 25px;
+
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 80px;
+
+    align-items: center;
+}
+
+.tag,
+.application-info > span,
+.section-title > span {
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.hero h1 {
+    margin-top: 18px;
+
+    font-size: clamp(45px, 6vw, 72px);
+    line-height: 1.05;
+    letter-spacing: -3px;
+}
+
+.hero h1 span {
+    color: #2563eb;
+}
+
+.hero-content > p {
+    max-width: 600px;
+
+    margin-top: 25px;
+
+    color: #64748b;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.hero-buttons {
+    margin-top: 35px;
+
+    display: flex;
+    gap: 12px;
+}
+
+.primary-button,
+.secondary-button {
+    padding: 14px 22px;
+    border-radius: 9px;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.primary-button {
+    background: #2563eb;
+    color: white;
+}
+
+.secondary-button {
+    background: white;
+    border: 1px solid #dbe1ea;
+}
+
+
+/* HERO CARD */
+
+.hero-card {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 20px 50px rgba(15, 23, 42, 0.08);
+
+    border: 1px solid #e5e7eb;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+
+    color: #94a3b8;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.status {
+    color: #16a34a;
+}
+
+.hero-card h3 {
+    margin-top: 35px;
+    font-size: 25px;
+}
+
+.hero-card p {
+    margin-top: 15px;
+
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.progress {
+    height: 7px;
+
+    margin-top: 25px;
+
+    background: #e2e8f0;
+    border-radius: 10px;
+}
+
+.progress div {
+    width: 65%;
+    height: 100%;
+
+    background: #2563eb;
+    border-radius: 10px;
+}
+
+.card-button {
+    display: block;
+
+    margin-top: 25px;
+
+    background: #172033;
+    color: white;
+
+    text-align: center;
+
+    padding: 14px;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* =========================
+   COMO FUNCIONA
+========================= */
+
+.how-section {
+    background: #172033;
+    color: white;
+
+    padding: 90px 25px;
+}
+
+.section-title {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-title h2 {
+    margin-top: 10px;
+
+    font-size: 40px;
+    letter-spacing: -1px;
+}
+
+.section-title p {
+    margin-top: 10px;
+
+    color: #94a3b8;
+}
+
+.steps {
+    max-width: 1200px;
+    margin: 55px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.step {
+    padding: 30px;
+
+    border: 1px solid #334155;
+    border-radius: 12px;
+}
+
+.step-number {
+    color: #60a5fa;
+    font-weight: 800;
+    font-size: 13px;
+}
+
+.step h3 {
+    margin-top: 25px;
+    font-size: 21px;
+}
+
+.step p {
+    margin-top: 10px;
+
+    color: #94a3b8;
+
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+
+/* =========================
+   CANDIDATOS
+========================= */
+
+.candidates-section {
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 100px 25px;
+}
+
+.candidate-grid {
+    margin-top: 50px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.candidate-card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 14px;
+
+    border: 1px solid #e2e8f0;
+
+    transition: 0.25s;
+}
+
+.candidate-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(15, 23, 42, 0.08);
+}
+
+.candidate-avatar {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #dbeafe;
+    color: #2563eb;
+
+    border-radius: 50%;
+
+    font-weight: 800;
+    font-size: 20px;
+
+    margin-bottom: 20px;
+}
+
+.party {
+    font-size: 10px;
+    font-weight: 800;
+    color: #2563eb;
+}
+
+.candidate-card h3 {
+    margin-top: 7px;
+
+    font-size: 22px;
+}
+
+.office {
+    margin-top: 5px;
+
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+.candidate-card > p:not(.office) {
+    margin-top: 20px;
+
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.candidate-actions {
+    display: flex;
+    gap: 8px;
+
+    margin-top: 25px;
+}
+
+.details-button,
+.vote-button {
+    flex: 1;
+
+    padding: 11px;
+
+    border-radius: 7px;
+
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.details-button {
+    background: white;
+    border: 1px solid #dbe1ea;
+}
+
+.vote-button {
+    border: none;
+
+    background: #2563eb;
+    color: white;
+}
+
+
+/* =========================
+   CANDIDATURA
+========================= */
+
+.application-section {
+    background: #eff6ff;
+
+    padding: 100px max(25px, calc((100% - 1150px) / 2));
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.application-info h2 {
+    margin-top: 15px;
+
+    font-size: 45px;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+}
+
+.application-info > p {
+    margin-top: 20px;
+
+    color: #64748b;
+    line-height: 1.7;
+}
+
+.application-info ul {
+    list-style: none;
+
+    margin-top: 30px;
+}
+
+.application-info li {
+    margin-top: 13px;
+
+    color: #475569;
+    font-size: 14px;
+}
+
+
+/* FORM */
+
+.candidate-form {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    border: 1px solid #dbeafe;
+
+    box-shadow: 0 15px 40px rgba(37, 99, 235, 0.08);
+}
+
+.candidate-form h3 {
+    margin-bottom: 25px;
+
+    font-size: 22px;
+}
+
+.candidate-form label {
+    display: block;
+
+    margin-top: 17px;
+    margin-bottom: 7px;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.candidate-form input,
+.candidate-form select,
+.candidate-form textarea {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #dbe1ea;
+    border-radius: 7px;
+
+    font-family: inherit;
+    font-size: 13px;
+
+    outline: none;
+}
+
+.candidate-form textarea {
+    resize: vertical;
+}
+
+.candidate-form input:focus,
+.candidate-form select:focus,
+.candidate-form textarea:focus {
+    border-color: #2563eb;
+}
+
+.submit-button {
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 14px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #2563eb;
+    color: white;
+
+    font-family: inherit;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #0f172a;
+    color: white;
+
+    padding: 60px 25px 25px;
+}
+
+.footer-content {
+    max-width: 1150px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+
+    gap: 50px;
+}
+
+.footer-content p {
+    margin-top: 15px;
+
+    color: #94a3b8;
+
+    font-size: 13px;
+}
+
+.footer-content h4 {
+    margin-bottom: 15px;
+}
+
+.footer-content > div:not(:first-child) a {
+    display: block;
+
+    margin-top: 10px;
+
+    color: #94a3b8;
+
+    font-size: 13px;
+}
+
+.footer-bottom {
+    max-width: 1150px;
+    margin: 50px auto 0;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #1e293b;
+
+    color: #64748b;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 850px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .steps,
+    .candidate-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .application-section {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .navbar {
+        padding: 0 15px;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-card {
+        padding: 25px;
+    }
+
+    .candidates-section,
+    .how-section {
+        padding: 70px 20px;
+    }
+
+    .application-section {
+        padding: 70px 20px;
+    }
+
+    .application-info h2 {
+        font-size: 36px;
+    }
+
+}
+
+/* =========================
+   APURAÇÃO
+========================= */
+
+.results-section {
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 20px 25px 100px;
+}
+
+.results-container {
+    margin-top: 45px;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    border: 1px solid #e2e8f0;
+
+    box-shadow:
+        0 15px 35px rgba(15, 23, 42, 0.05);
+}
+
+
+/* CADA RESULTADO */
+
+.result-item {
+    padding: 25px 0;
+
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.result-item:last-child {
+    border-bottom: none;
+}
+
+
+/* INFORMAÇÕES */
+
+.result-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.result-info div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.result-info strong {
+    font-size: 15px;
+}
+
+.result-info span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+
+    background: #dbeafe;
+    color: #2563eb;
+
+    border-radius: 50%;
+
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.result-info p {
+    color: #64748b;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* BARRA */
+
+.result-bar {
+    width: 100%;
+    height: 10px;
+
+    margin-top: 15px;
+
+    background: #e2e8f0;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.result-progress {
+    height: 100%;
+
+    background: #2563eb;
+
+    border-radius: 20px;
+
+    transition: width 0.5s ease;
+}
+
+.result-item small {
+    display: block;
+
+    margin-top: 7px;
+
+    color: #64748b;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    text-align: right;
+}
+
+
+/* =========================
+   TOTAL DE VOTOS
+========================= */
+
+.total-votes {
+    margin-top: 25px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background: #172033;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+}
+
+.total-votes div {
+    padding: 25px 30px;
+}
+
+.total-votes div + div {
+    border-left: 1px solid #334155;
+}
+
+.total-votes span {
+    display: block;
+
+    color: #94a3b8;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.total-votes strong {
+    display: block;
+
+    margin-top: 8px;
+
+    color: white;
+
+    font-size: 25px;
+}
+
+.voting-status {
+    color: #60a5fa !important;
+
+    font-size: 16px !important;
+}
+
+@media (max-width: 600px) {
+
+    .results-section {
+        padding: 20px 20px 70px;
+    }
+
+    .results-container {
+        padding: 20px;
+    }
+
+    .total-votes {
+        grid-template-columns: 1fr;
+    }
+
+    .total-votes div + div {
+        border-left: none;
+        border-top: 1px solid #334155;
+    }
+
+}
