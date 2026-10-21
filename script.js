@@ -5,6 +5,9 @@ const totalVotes = document.querySelector('.total-of-votes');
 const resultProgress = document.querySelectorAll('.result-progress');
 const votosInfo = document.querySelectorAll('.votos-info');
 const percentageVotes = document.querySelectorAll('.percentage-votes');
+const valueNameCandidato = document.querySelector('.value-name-candidato');
+const submitBtnCandidato = document.querySelector('.submit-button');
+const nameCandidato = document.querySelectorAll('.name-candidate');
 
 let candidato01 = 0;
 let candidato02 = 0;
@@ -52,4 +55,15 @@ startBtn.addEventListener('click', function () {
     }, 3000);
 
 
+});
+
+console.log(valueNameCandidato.value);
+
+submitBtnCandidato.addEventListener('click', (event) => {
+
+    event.preventDefault();
+
+    nameCandidato.forEach((candidato) => {
+        candidato.textContent = valueNameCandidato.value;
+    });
 });
