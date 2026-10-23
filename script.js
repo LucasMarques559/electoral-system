@@ -1,3 +1,5 @@
+'use strict';
+
 const startBtn = document.querySelector('.card-button');
 const votingStatus = document.querySelector('.voting-status');
 const totalVotes = document.querySelector('.total-of-votes');
@@ -66,4 +68,6 @@ submitBtnCandidato.addEventListener('click', (event) => {
     nameCandidato.forEach((candidato) => {
         candidato.textContent = valueNameCandidato.value;
     });
+    
+    valueNameCandidato.value = '';
 });
